@@ -2,10 +2,11 @@
 Summary:	IO-stringy perl module
 Summary(pl):	Modu³ perla IO-stringy
 Name:		perl-IO-stringy
-Version:	1.213
+Version:	1.216
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
+Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/IO/IO-stringy-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -37,8 +38,7 @@ rm -rf $RPM_BUILD_ROOT
   mv -f .packlist.new .packlist
 )
 
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        README
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
