@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	stringy
-%include	/usr/lib/rpm/macros.perl
 Summary:	IO-stringy perl module
 Summary(pl):	Modu³ perla IO-stringy
 Name:		perl-IO-stringy
 Version:	2.108
-Release:	2
-
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ IO-stringy perl module.
 Modu³ perla IO-stringy.
 
 %prep
-%setup -q -n IO-stringy-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
