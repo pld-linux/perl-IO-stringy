@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
@@ -8,12 +8,12 @@
 Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ³añcuchy i tablice
 Name:		perl-IO-stringy
-Version:	2.108
-Release:	7
+Version:	2.109
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c9c9df6db1b4ec5e30b0e505a9edd1aa
+# Source0-md5:	fb8fbb8037bcc2aa0b9abec675231544
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -39,12 +39,13 @@ IO::Scalar, IO::ScalarArray i IO::Lines.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
