@@ -2,7 +2,7 @@
 Summary:	IO-stringy perl module
 Summary(pl):	Modu³ perla IO-stringy
 Name:		perl-IO-stringy
-Version:	2.105
+Version:	2.106
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
