@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	stringy
-Summary:	IO::stringy perl module
-Summary(pl):	Modu³ perla IO::stringy
+Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Name:		perl-IO-stringy
 Version:	2.108
 Release:	3
@@ -15,10 +14,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO::stringy perl module.
-
-%description -l pl
-Modu³ perla IO::stringy.
+This toolkit primarily provides modules for performing both traditional
+and object-oriented i/o) on things I<other> than normal filehandles; in
+particular, L<IO::Scalar|IO::Scalar>, L<IO::ScalarArray|IO::ScalarArray>,
+and L<IO::Lines|IO::Lines>.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
