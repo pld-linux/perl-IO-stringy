@@ -9,12 +9,12 @@ Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ³añcuchy i tablice
 Name:		perl-IO-stringy
 Version:	2.108
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,7 +34,8 @@ IO::Scalar, IO::ScalarArray i IO::Lines.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -50,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/IO/*.pm
+%{perl_vendorlib}/IO/*.pm
 %{_mandir}/man3/*
