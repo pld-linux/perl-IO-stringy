@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	IO
 %define	pnam	stringy
-Summary:	IO-stringy perl module
-Summary(pl):	Modu³ perla IO-stringy
+Summary:	IO::stringy perl module
+Summary(pl):	Modu³ perla IO::stringy
 Name:		perl-IO-stringy
 Version:	2.108
 Release:	3
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-IO-stringy perl module.
+IO::stringy perl module.
 
 %description -l pl
-Modu³ perla IO-stringy.
+Modu³ perla IO::stringy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
