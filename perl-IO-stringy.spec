@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	IO
-%define	pnam	stringy
+%define		pdir	IO
+%define		pnam	stringy
 Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ³añcuchy i tablice
 Name:		perl-IO-stringy
