@@ -10,7 +10,8 @@ Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ³añcuchy i tablic
 Name:		perl-IO-stringy
 Version:	2.109
 Release:	1
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fb8fbb8037bcc2aa0b9abec675231544
