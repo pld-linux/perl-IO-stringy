@@ -8,13 +8,13 @@
 Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ³añcuchy i tablice
 Name:		perl-IO-stringy
-Version:	2.109
+Version:	2.110
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fb8fbb8037bcc2aa0b9abec675231544
+# Source0-md5:	2e6a976cfa5521e815c1fdf4006982de
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
