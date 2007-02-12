@@ -6,7 +6,7 @@
 %define		pdir	IO
 %define		pnam	stringy
 Summary:	IO-stringy - I/O on in-core objects like strings and arrays
-Summary(pl):	IO-stringy - operacje I/O na obiektach takich jak ≥aÒcuchy i tablice
+Summary(pl.UTF-8):   IO-stringy - operacje I/O na obiektach takich jak ≈Ça≈Ñcuchy i tablice
 Name:		perl-IO-stringy
 Version:	2.110
 Release:	1
@@ -26,10 +26,10 @@ traditional and object-oriented I/O on things other than normal
 filehandles; in particular, IO::Scalar, IO::ScalarArray, and
 IO::Lines.
 
-%description -l pl
-Ten zestaw narzÍdzi dostarcza g≥Ûwnie modu≥Ûw do wykonywania zarÛwno
-tradycyjnych jak i obiektowo zorientowanych operacji wej∂cia/wyj∂cia
-na rzeczach innych niø normalne uchwyty plikÛw, w szczegÛlno∂ci:
+%description -l pl.UTF-8
+Ten zestaw narzƒôdzi dostarcza g≈Ç√≥wnie modu≈Ç√≥w do wykonywania zar√≥wno
+tradycyjnych jak i obiektowo zorientowanych operacji wej≈õcia/wyj≈õcia
+na rzeczach innych ni≈º normalne uchwyty plik√≥w, w szczeg√≥lno≈õci:
 IO::Scalar, IO::ScalarArray i IO::Lines.
 
 %prep
