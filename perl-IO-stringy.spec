@@ -9,7 +9,7 @@ Summary:	IO-stringy - I/O on in-core objects like strings and arrays
 Summary(pl.UTF-8):	IO-stringy - operacje I/O na obiektach takich jak łańcuchy i tablice
 Name:		perl-IO-stringy
 Version:	2.110
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
