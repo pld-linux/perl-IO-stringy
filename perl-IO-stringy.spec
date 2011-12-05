@@ -13,8 +13,9 @@ Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/IO/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2e6a976cfa5521e815c1fdf4006982de
+URL:		http://search.cpan.org/dist/IO-stringy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -53,6 +54,20 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%{perl_vendorlib}/IO/*.pm
-%{_mandir}/man3/*
+%doc COPYING README
+%{perl_vendorlib}/IO/AtomicFile.pm
+%{perl_vendorlib}/IO/InnerFile.pm
+%{perl_vendorlib}/IO/Lines.pm
+%{perl_vendorlib}/IO/Scalar.pm
+%{perl_vendorlib}/IO/ScalarArray.pm
+%{perl_vendorlib}/IO/Stringy.pm
+%{perl_vendorlib}/IO/Wrap.pm
+%{perl_vendorlib}/IO/WrapTie.pm
+%{_mandir}/man3/IO::AtomicFile.3pm*
+%{_mandir}/man3/IO::InnerFile.3pm*
+%{_mandir}/man3/IO::Lines.3pm*
+%{_mandir}/man3/IO::Scalar.3pm*
+%{_mandir}/man3/IO::ScalarArray.3pm*
+%{_mandir}/man3/IO::Stringy.3pm*
+%{_mandir}/man3/IO::Wrap.3pm*
+%{_mandir}/man3/IO::WrapTie.3pm*
